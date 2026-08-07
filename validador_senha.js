@@ -20,31 +20,37 @@ for(const caractere of senha){
     temEspecial = true;
    }
 }
+
 if(temTamanho == true){
     console.log("\nTem " +senha.length+ " caracteres.")
 }
 else {
     console.log("\nCaractere insuficiente.")
 }
+
 if(temMaiuscula) {
      console.log("Tem maiúscula.");
 }
 else {
     console.log("Falta maiúscula.");
 }
+
 if(temNumero == true) {
     console.log("Tem número.")
 }
 else{
     console.log("Falta número.")
 }
+
 if(temEspecial == true) {
     console.log("Tem caractere especial.")
 }
 else {
     console.log("Falta caractere especial. ")
 }
+
     let nota = temTamanho + temMaiuscula + temEspecial + temNumero
+
 if (nota <=1){
     console.log("Senha: Fraca")
 }
